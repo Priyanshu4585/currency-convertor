@@ -17,6 +17,7 @@ body{
     border: 5px solid black;
     height: 22rem;
     width: 20%;
+   min-width: fit-content;
 }
 form{
     margin: 2rem 0 2rem 0;
@@ -47,6 +48,7 @@ form input{
     display: flex;
     margin-top: 1rem;
     align-items: center;
+      justify-content: center;
    
 }
 form select{
