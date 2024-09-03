@@ -1,4 +1,4 @@
-const Base_url ="https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies";
+const Base_url ="https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies";
 
 const dropdowns = document.querySelectorAll(".dropdown select");
 
@@ -50,11 +50,11 @@ if(amountValue === "" || amountValue < 1){
     amountValue = 1
     amount.value ="1"
 }
-const URL = `${Base_url}/${fromCurr.value.toLowerCase()}/${toCurr.value.toLowerCase()}.json`;
+const URL = `${BASE_URL}/${fromCurr.value.toLowerCase()}.json`;
 let response = await fetch(URL)
 
 let data = await response.json()
-let rate = data[toCurr.value.toLowerCase()]
+let rate =data[fromCurr.value.toLowerCase()][toCurr.value.toLowerCase()];
 let finalAmount = amountValue*rate ;
 
 msg.innerText = `${amountValue}   ${fromCurr.value} = ${finalAmount}   ${toCurr.value}`
