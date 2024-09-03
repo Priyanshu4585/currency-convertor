@@ -50,7 +50,7 @@ if(amountValue === "" || amountValue < 1){
     amountValue = 1
     amount.value ="1"
 }
-const URL = `${BASE_URL}/${fromCurr.value.toLowerCase()}.json`;
+const URL = `${Base_url}/${fromCurr.value.toLowerCase()}.json`;
 let response = await fetch(URL)
 
 let data = await response.json()
