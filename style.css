@@ -106,3 +106,26 @@ height: 40px;
  font-weight: bolder;
  border: 0px solid #F3B95F;
 }
+@media (max-width: 600px) {
+    .container {
+        padding: 1rem;
+        border: 8px solid #F3B95F;
+    }
+
+    form input, form button, form select {
+        font-size: 0.9rem;
+        height: 2rem;
+    }
+
+    .msg {
+        font-size: 1rem;
+    }
+
+    form button {
+        height: 40px;
+    }
+
+    .select-Container {
+        height: 40px;
+    }
+}
